@@ -1,0 +1,76 @@
+# <!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    .sidebar {
+      width: 200px;
+      height: 100vh;
+      background: #111;
+      color: white;
+      position: fixed;
+      padding: 20px;
+    }
+
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px;
+      background: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <p>Home</p>
+    <p>Analytics</p>
+    <p>Settings</p>
+  </div>
+
+  <div class="main">
+    <h1>Dashboard</h1>
+
+    <div class="card">
+      <h3>Total Users</h3>
+      <p>0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Posts</h3>
+      <p>0</p>
+    </div>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    function logout() {
+      alert("Logged out");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
